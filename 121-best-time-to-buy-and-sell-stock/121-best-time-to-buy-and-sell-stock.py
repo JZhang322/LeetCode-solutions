@@ -8,8 +8,7 @@ class Solution:
 
             if prices[l] < prices[r]:
                 z = prices[r] - prices[l]
-                if z>profit:
-                    profit = z
+                profit = max(z, profit)
 
             else:
                 l = r
